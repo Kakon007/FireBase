@@ -61,7 +61,6 @@ class _LoginPhoneState extends State<LoginPhone> {
                     AuthCredential credential = PhoneAuthProvider.getCredential(
                         verificationId: verificationId,
                         smsCode: _txfromcontroller.text.trim());
-
                     AuthResult result =
                         await _auth.signInWithCredential(credential);
 

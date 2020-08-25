@@ -1,10 +1,9 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatelessWidget {
-  final FirebaseUser user;
+class HomeEmailScreen extends StatelessWidget {
+  // final FirebaseUser user;
 
-  HomeScreen({this.user});
+  //HomeEmailScreen({this.user});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +22,7 @@ class HomeScreen extends StatelessWidget {
               height: 16,
             ),
             Text(
-              "${user.email}",
+              "Log in",
               style: TextStyle(
                 color: Colors.grey,
               ),
